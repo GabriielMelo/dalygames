@@ -1,4 +1,5 @@
 import Container from "@/components/container";
+import Input from "@/components/input";
 import { GameProps } from "@/utils/types/game";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,6 +43,8 @@ export default async function Home() {
             </div>
           </section>
         </Link>
+        <Input />
+        <h2 className="text-lg font-bold mt-8 mb-5">Jogos para conhecer</h2>
       </Container>
     </main>
   );
