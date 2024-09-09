@@ -7,3 +7,4 @@ export interface GameProps {
   categories: string[];
   release: string;
 }
+
