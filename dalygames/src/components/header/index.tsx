@@ -1,10 +1,9 @@
-import logoImg from "@/public/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { LiaGamepadSolid } from "react-icons/lia";
+import logoImg from "/public/logo.svg";
 export default function Header() {
-
-    //
+  //
   return (
     <header className="w-full h-28 bg-slate-100 text-black px-2">
       <div className="max-w-screen-lg mx-auto flex justify-center items-center h-28 sm:justify-between">

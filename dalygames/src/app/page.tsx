@@ -10,7 +10,7 @@ async function getDalyGame() {
   try {
     const res = await fetch(
       `${process.env.NEXT_API_URL}/next-api/?api=game_day`,
-      { next: { revalidate: 320 } }
+      { next: { revalidate: 60 } }
     );
     return res.json();
   } catch (err) {
@@ -60,7 +60,7 @@ export default async function Home() {
         <h2 className="text-lg font-bold mt-8 mb-5">Jogos para conhecer</h2>
         <section className="grid gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {gamesData.map((game) => {
-            return( <Gamecard key={game.id} game={game} />);
+            return <Gamecard key={game.id} game={game} />;
           })}
         </section>
       </Container>
